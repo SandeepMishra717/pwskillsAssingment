@@ -1,0 +1,38 @@
+                                                              ASSINGMENT-01
+
+Ans-1  Primitive datatype in java-->byte,short,char,int,long,float,double,boolean
+
+Ans-2  A name in java is known as identifiers .it can be class name,method name,variable name,interface name etc
+
+Ans-3  A final class in java is that can't be inherited. it means if we don't want to modify the class prorperties,behaviour we can make our class as final.
+
+Ans-4  Two ways to make a class final--> first using final keyword and second if we make constructor as private than also the class will behave like final.
+
+Ans-5  Yes,we can create instance of final class in other class but we can't inherit final calss.
+
+Ans-6 volatile keyword used for a variable indicates that the value of variable may be modify by multiple Thread. when we need to ensure visibility of changes
+      of variable between threads that time we use variable as volatile.
+
+Ans-7 transient keyword used to indicate a field in class that should not be serialized means when a field marked as transient ,its value is not inlcuded in 
+      serialed form.For example password field is marked as transient so when user object is serialized and than deserialized ,password field will not saved
+      its value will lost .it become null.
+
+Ans-8 There are two type of casting
+       1. primitive casting-- conversion one primitive data type to another data type. It is also of two type.
+
+      (i)Implicit type casting(widening) ---when a smaller data type is converted into larger data type. there is no data loss. For example int to double
+      (ii)Explicit type cating(Narrowing)--- when we manually convert a larger data type to  smaller data type.Here data loss occurs. For example double to int
+
+      2. Derived type casting--it is type conversion between objects.
+         (i) upcasting - converting child object into parent objec
+         (ii) downcasting - coverting parent object into child class object
+
+
+Ans-9 Boxing or Autoboxing is process of converting primitive datatype to its corresponding wraper class.For example int to Integer,float to Float
+      unboxing is reverse of Boxing where wrapper classes are converted into corresponding data types . for example Integer to int
+
+Ans-10 identifiers - A name in java is identifiers . it don't have predefined meaning, defined by user
+       keyword -   reserved word in java with predefined meaning, defined by java language
+       literal -   fixed value used in code. To represent constant directly.
+      
+       
