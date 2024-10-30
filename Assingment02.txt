@@ -1,0 +1,117 @@
+                                                                       ASSINGMENT - 02
+
+ANS 01-> LIST OF OPERATORS IN JAVA 
+         Arithmetic: +, -, *, /, %
+         Relational: ==, !=, >, <, >=, <=
+         Logical: &&, ||, !
+         Bitwise: &, |, ^, ~, <<, >>, >>>
+         Assignment: =, +=, -=, *=, /=, %=
+         Unary: +, -, ++, --, !
+         Ternary: ? :
+
+ANS 02-> Increment Operator (++):it is of two typ
+
+        (a)Post-increment (variable++): The current value is used in the expression, then the variable is incremented by 1.
+        Ex-- int x =5 ; 
+             System.out.println(x++);  //5
+             System.out.println(x);  //6
+
+       (b)Pre-increment (++variable): The variable is incremented by 1 first, then the updated value is used in the expression.
+        Ex-- int x =5 ; 
+             System.out.println(++x);  //6
+             System.out.println(x);  //6
+
+      Decrement Operator (--): it is also two types
+
+      (a)Post-decrement (variable--): The current value is used in the expression, then the variable is decremented by 1.
+        Ex-- int x =5 ; 
+             System.out.println(x--);  //5
+             System.out.println(x);  //4
+
+      (b)Pre-decrement (--variable): The variable is decremented by 1 first, then the updated value is used in the expression.
+         Ex-- int x =5 ; 
+             System.out.println(--x);  //4
+             System.out.println(x);  //4
+
+ANS 03-->  Conditional operator(three types of oparators comes in this)
+           Conditional AND --- &&
+           Conditional OR ---  ||
+           ternary :  ? , :
+
+ANS 04-->In Java, operators can be classified based on the number of operands they work with:
+
+    2.  Unary Operators (1 Operand)  :Operate on a single operand.
+         EX: ++ (increment), -- (decrement), ! (logical NOT), ~ (bitwise NOT).
+
+    2. Binary Operators (2 Operands)  :Operate on two operands.
+     
+        Arithmetic: +, -, *, /, %
+        Relational: ==, !=, >, <, >=, <=
+       Logical: &&, ||
+       Bitwise: &, |, ^, <<, >>, >>>
+       Assignment: =, +=, -=, *=, /=, etc.
+
+   3.  Ternary Operator (3 Operands)
+
+    EX: condition ? expression1 : expression2
+
+
+ANS 05 -->conditional statements allow a program to make decisions based on certain conditions.
+
+         1. if Statement ::
+           The if statement is used to test a condition. If the condition is true, the code inside the if block is executed; otherwise, it is skipped.
+        2. if-else Statement::
+          The if-else statement allows an alternative path if the condition is false tha go for else statement.
+        3. if-else-if Ladder::
+           This is useful when there are multiple conditions to check. The program checks each condition one by one until it finds a true condition and
+           executes the corresponding block of code
+        4. switch Statement
+          The switch statement allows you to execute one of many code blocks based on the value of an expression.
+
+          
+ANS 06 --> if-else Syntex ::condition true than 1 otherwise statement 2 execute
+             if(condition){
+                          statement 1....
+                      }
+             else {
+                        statement 2...
+                 }
+
+
+ANS 07-->1.  types of Iterative in java 
+           1.for Loop  ::The for loop is used when the number of iterations is known.
+              for(initialization; condition ; updation;){
+                        statements;;;;;;
+                  }
+
+         2. while loop :: when no of itertion is unknown 
+             while(condition){
+              statements;;;;;;
+               updation
+                 }
+         3 . do while loop  
+               do{
+              statements;;;;;;
+               updation
+                 }while(condition);
+
+
+ANS 08--> Array is a data structure that holds a fixed-size sequence of elements of the same data type. Arrays are used to store multiple values
+          in a single variable instead of declaring separate variables for each value. 
+
+
+ANS 09--> way to create array
+         
+         Array declation --> int x[];
+         initialization or giving memmory to arrray   ---    x  = new int[size];
+       
+        Both Array declation and  initializatio--- int[] x = new intt[sixe];
+
+        directly array creation --- int[] x = {v1,v2,v3,...};
+
+
+ANS 10--> Difference between StringBuffer and StringBuilder
+          1.  StringBuffer is synchronized, meaning it is thread-safe. Multiple threads can safely use StringBuffer without causing data inconsistency
+              but StringBuilder is not synchronized, making it unsuitable for use in a multi-threaded environment where thread safety is a concern.
+          2.  Due to synchronization StringBuffer is slower compared to StringBuilder
+       
