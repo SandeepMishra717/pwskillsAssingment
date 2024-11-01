@@ -1,0 +1,61 @@
+                                                                                  Assingment-03
+
+ANS-01     JVM (Java Virtual Machine)
+           It’s the runtime environment where Java bytecode runs.it converts Java bytecode (compiled code) into machine code so it can be executed by the computer's CPU.
+           Platform-independent: JVM allows Java to be platform-independent, as it abstracts the underlying OS details.It includes a garbage collector, memory manager
+            and bytecode interpreter.
+
+          JRE (Java Runtime Environment)
+          Provides a runtime environment to run Java applications. Contains the JVM along with libraries and other components to run Java applications.
+          Includes core libraries (like java.lang, java.util, etc.), JVM, and other resources needed for Java runtime but not development tools (like compilers).
+          When you only need to run Java programs, JRE is sufficient.
+
+          JDK 5 (Java SE 5)
+          JDK 5 (also known as Java 5 or Java SE 5) is an older version of the Java Development Kit, released by Sun Microsystems in 2004
+          Introduced several important features like generics, enhanced for loops, metadata annotations, enumerated types, and the java.util.concurrent package for concurrency.
+          JDK 5 is now considered outdated, with many updates and improvements in newer versions of Java, though its introduction of core features made it a pivotal release.
+
+ANS-02     When we write Java code, the Java compiler converts it into an intermediate form called bytecode, rather than directly compiling it to machine-specific instructions.
+           This bytecode is a standardized, platform-neutral code format that does not depend on the machine or operating system(platform).This design allows Java to fulfill its 
+           WORA(Write Once, Run Anywhere) promise.
+
+
+ASN-03    We write out  Java program in some (.java files) are compiled into bytecodes (.class files) using the Java compiler (javac). A class loader, which is a component of the 
+          JVM loads the compiled Java bytecodes into specific areas called runtime data areas. Java execution engine, which is also a component of the JVM executes the Java
+          bytecodes.
+
+
+ANS-04    Varargs (variable-length arguments) in Java allow a method to accept a variable number of arguments of a specified type. It’s declared with three dots (...) after the parameter type
+          like int... numbers. Varargs simplify method calls by letting you pass multiple arguments or arrays without needing method overloading. Internally, they’re treated as an array, making it easy 
+          to iterate over all passed values.
+          ex -- void diplay(int... x)
+
+
+ANS-05   In Java, there are three main types of variables:
+
+         1. Local Variables: Declared within a method, constructor, or block, and accessible only within that scope. They’re not initialized by default.
+
+         2. Instance Variables: Declared outside any method, but within a class. Each instance of the class has its own copy, and they’re initialized to default values if not explicitly set.
+
+        3. Static Variables: Declared with the static keyword in a class but outside any method. They belong to the class rather than instances, so all instances share the same static variable.    
+
+
+ANS-06   Memory area allocated by jvm 
+          claas/Method Area: Stores class metadata, constants, static variables, and method code. It’s shared among all threads.
+
+          Heap: Allocates memory for dynamically created objects and arrays. This is also shared among all threads, and the garbage collector manages it.
+
+         Java Stack: Each thread has its own stack, which holds local variables, method calls, and partial results. Each method call creates a new stack frame.
+
+         PC (Program Counter) Register: Each thread has its own PC register, which holds the address of the currently executing JVM instruction.
+
+         Native Method Stack: Used for native method calls (non-Java code, like C/C++), handling native code and resources.
+
+
+ANS-07   The Just-In-Time (JIT) Compiler is a component of the Java Virtual Machine (JVM) that improves the runtime performance of Java applications. 
+         The JIT compiler works by dynamically converting Java bytecode (intermediate code) into machine code at runtime, making it faster to execute on the host system.
+         JIT compiles only the parts of the bytecode that are used frequently called "hot code" optimizing execution without translating the entire codebase.
+         which allows it to run directly on the system’s CPU.
+
+
+ 
