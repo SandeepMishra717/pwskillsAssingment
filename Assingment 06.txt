@@ -1,0 +1,105 @@
+                                                                        Assingment 06
+
+
+ANS-01       The Collection Framework in Java is a unified architecture introduced to manage and manipulate groups of objects. It includes interfaces, implementations 
+             like classes, and algorithms to perform operations such as searching, sorting, inserting, deleting, and more.
+            
+             Interfaces:  List, Set, Queue, Map..
+             Classes: ArrayList, HashSet, LinkedList, HashMap...
+             Algorithms: Define standard operations such as sorting and searching.
+
+
+
+ANS-02       Difference between ArrayList and  LinkedList
+             
+              1. Data Structure: ArrayList uses a dynamic array, while LinkedList uses a doubly linked list.
+
+              2. Access Time: ArrayList provides fast random access (O(1)), LinkedList is slower (O(n)).
+ 
+              3. Insertion/Deletion: ArrayList is slower for middle insertions (O(n)), LinkedList is faster at the ends (O(1)).
+
+              4. Memory Usage: ArrayList has lower memory usage, LinkedList has higher memory overhead due to pointers.
+
+              5 . Use Case: ArrayList is best for frequent reads; LinkedList is ideal for frequent additions/removals
+
+
+ANS-03      Difference between Iterator and ListIterator:-->
+ 
+             1.Traversal Direction: Iterator traverses only in a forward direction, while ListIterator traverses both forward and backward.
+
+             2.Collection Types: Iterator can be used with any collection, whereas ListIterator is specifically for List implementations.
+
+             3.Modification: Iterator allows removal of elements, while ListIterator allows addition, removal, and replacement of elements.
+
+             4.Index Access: Iterator has no index access methods, while ListIterator provides methods to access indices.
+
+             5. Starting Point: Iterator starts at the beginning, while ListIterator can start at any specified index.
+
+
+
+ANS-04     Difference between Iterator and Enumeration :-->
+           
+           1.Traversal Methods: Iterator uses hasNext() and next(), while Enumeration uses hasMoreElements() and nextElement().
+
+           2.Modification Capability: Iterator allows removal of elements; Enumeration does not support removal.
+
+           3.Usage: Iterator is used with modern collections; Enumeration is primarily used with legacy classes.
+
+           4. Fail-Fast Behavior: Iterator has fail-fast behavior, throwing exceptions on concurrent modification; Enumeration does not have this feature.
+
+
+
+ANS-05    Difference Set and List::-->
+
+          1. Duplicates: List allows duplicate elements, while Set does not allow duplicates.
+          2. Order: List maintains the order of elements based on insertion, while Set does not guarantee any specific order (except for ordered sets like LinkedHashSet).
+          3. Implementation: List is implemented by classes like ArrayList and LinkedList, while Set is implemented by classes like HashSet and TreeSet.
+          4. Access Method: List provides indexed access to elements, while Set does not support indexing.
+          5. Performance: List operations are generally faster for accessing elements by index, while Set operations are typically faster for checking existence and uniqueness.
+
+
+ANS-06   Difference HashSet and TreeSet ::-->
+
+          1.Ordering: HashSet does not maintain any order of elements, while TreeSet maintains elements in a sorted order.
+
+          2.Implementation: HashSet is based on a hash table, whereas TreeSet is based on a red-black tree structure.
+
+          3.Performance: HashSet offers constant time complexity (O(1)) for basic operations like add and remove, while TreeSet has a time complexity of O(log n) due to the need to maintain order.
+
+          4.Null Elements: HashSet allows one null element, while TreeSet does not allow null elements (as it cannot compare null for sorting).
+
+          5.Use Case: HashSet is preferred for faster performance with unordered data, while TreeSet is used when sorted order of elements is required.
+
+
+
+ANS-07    Difference between  Array and ArrayList ::-->
+
+           Size: Array has a fixed size, while ArrayList is dynamically resizable.
+
+           Data Type: Array can hold primitive types (e.g., int, char) and objects, whereas ArrayList can only hold objects (not primitives directly).
+
+           Performance: Array is generally faster for accessing elements due to its fixed size, while ArrayList has some overhead for resizing and managing elements.
+
+
+
+ANS-08    JDBC (Java Database Connectivity) is a Java API that provides a standard interface for connecting and interacting with relational databases. It allows Java applications to execute SQL statements,
+          retrieve results, and manage database connections.JDBC is essential for Java developers to interact with databases, allowing for the execution of SQL commands and management of data in a standardized way.
+
+
+
+
+ANS-09   DriverManager is a class in JDBC (Java Database Connectivity) that manages a list of database drivers. It is a crucial component that facilitates the connection between Java applications and various databases.
+         DriverManager is a core component of JDBC that simplifies the process of establishing connections to databases by managing JDBC drivers.
+
+
+
+ANS-10  To store images and files in a database table, the following data types are commonly used:
+
+       BLOB (Binary Large Object): Used for storing large binary data like images and multimedia (e.g., MySQL: BLOB, MEDIUMBLOB, LONGBLOB).
+
+       VARBINARY: Used for variable-length binary data, suitable for smaller binary files (e.g., SQL Server: VARBINARY(n)).
+
+       BYTEA: PostgreSQL data type for storing binary data (e.g., BYTEA).
+
+       TEXT: Can be used to store file paths or Base64-encoded strings, but not ideal for binary files.
+
