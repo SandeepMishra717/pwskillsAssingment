@@ -1,0 +1,131 @@
+                                                                       Assingment 04
+
+
+ANS-01     In Java, an exception is an unexpected event or error that happens while your program is running, which disrupts its normal flow. For example
+           if your program tries to divide a number by zero or access a part of an array that doesn’t exist, an exception will occur.To make sure these 
+           errors don’t crash your program, Java provides a way to "catch" and handle them. You can think of i setting up a safety net for unexpected problems. 
+
+ANS-02    Exceptions have two types
+           1.Built-in Exception
+            (a) Checked Exceptio
+            (b) Unchecked Exception
+          2. User-defined Exception
+
+
+
+ANS-03     In Java, exceptions are handled using try-catch blocks. This mechanism allows you to catch an exception and respond to it so that your program can 
+           continue running smoothly or exit gracefully.
+
+           Steps to Handle Exceptions
+
+           Try Block: Write code that might throw an exception inside a try block. Java will monitor this block for errors.
+
+           Catch Block: If an exception occurs in the try block, Java immediately stops that block and jumps to the corresponding catch block. The catch block has code
+                        to handle the specific type of exception that was thrown.
+ 
+           Finally Block (optional): The finally block runs after the try and catch blocks, whether an exception was thrown or not. It’s often used for cleanup tasks 
+                                   like closing files or releasing resources.
+
+           Throwing Exceptions: You can also use the throw keyword to manually throw an exception when a certain condition is met.
+
+           Throws Keyword: If a method can potentially throw an exception that it doesn’t handle itself, it can declare the exception using the throws keyword.
+                           This means that the calling code is responsible for handling the exception.
+
+
+ANS-04     Java’s Exception class inherits from the Throwable class which provides several important methods for handling and debugging exceptions.
+ 
+           1. getMessage(): Returns a description of the exception.
+
+           2. toString(): Returns the exception type and message.
+         
+           3. printStackTrace(): Prints the stack trace to the console.
+
+           4. getStackTrace(): Returns an array of stack trace elements.
+
+          5. initCause(Throwable): Sets the cause of the exception.
+
+          6. getCause(): Retrieves the cause of the exception.
+
+          7. fillInStackTrace(): Updates the stack trace information.
+
+
+ANS-05    Runtime exceptions are those exceptions that occur at the run time of the program execution. These exceptions are not noticed by the compiler at the compile
+          time and hence the program successfully gets compiled. Therefore, they are also called unchecked exceptions. All subclasses of the java.lang.RunTimeException class 
+          and java.lang.Error class belongs to runtime exceptions. Examples of runtime exceptions include NullPointerException, NumberFormatException, ArrayIndexOutOfBoundException,
+          StackOverflowError, ClassCastException, ArithmeticException, ConcurrentModificationException.
+
+
+ANS-06    Throw: Used to explicitly throw an exception within a method or block.
+
+          Throws: Used in the method signature to declare that a method can throw exceptions.
+
+          Ex-- Throw: throw new ExceptionType("message");
+             Throws: public void method() throws ExceptionType;
+
+          Throw: Directly throws an exception.
+
+          Throws: Indicates potential exceptions that must be handled by the caller
+
+
+ANS-07   Error is a serious problem that happens in the application or environment. Usually caused by system issues like running out of memory.
+         we typically cannot catch or recover from errors.
+         Ex: OutOfMemoryError: The program runs out of memory.
+             StackOverflowError: Too many function calls cause the stack to overflow.
+
+         Exception is  problem that occurs during the program's execution, which you can manage Often caused by mistakes in the code like trying to access a file that doesn’t exist
+         we  can catch and handle exceptions using try-catch blocks.
+         Ex  : IOException: Problems with input/output operations (like reading a file).
+               NullPointerException: Trying to use an object that hasn’t been initialized.
+
+
+
+ANS-08   Exception Hierarchy in Java :
+         Throwable
+           1. Error
+                OutOfMemoryError
+                StackOverflowError
+                InternalError
+           2.Exception
+              (a)Checked Exceptions
+                   IOException
+                   SQLException
+                   ClassNotFoundException
+              (b)Unchecked Exceptions
+                  RuntimeException
+                  NullPointerException
+                  ArrayIndexOutOfBoundsException
+                  ArithmeticException
+
+
+ANS-09   A 'package' can be defined as a group of related types of classes, interfaces, enumerations andannotations providing access
+         protection and name space management.
+
+
+
+ANS-10   1. public
+             The member is accessible from any other class in any package.
+              Use when we want to allow access to a class, method, or variable from anywhere in the application.
+
+         2.protected
+            The member is accessible within its own package and by subclasses (derived classes) in other packages.
+            Use when we want to allow access to a member for subclasses and classes in the same package
+        
+         3. default (no modifier)
+             The member is accessible only within its own package. It is the default access level when no modifier is specified.
+              Use when we want to restrict access to classes and members to the same package.
+
+         4. private
+              The member is accessible only within its own class. No other class can access it, even if they are in the same package.
+              Use when we want to restrict access to a class member strictly within its own class.
+
+
+ANS-11   Non-access modifiers in Java enhance the behavior of classes, methods, and variables, allowing for more control over how they operate.
+
+        static: Belongs to the class rather than instances.
+        final: Value cannot change, method cannot be overridden, class cannot be subclassed.
+        abstract: Class cannot be instantiated, method must be implemented in subclasses.
+        synchronized: Allows only one thread to access a method/block at a time.
+        volatile: Indicates a variable may be changed by multiple threads.
+        transient: Field is not serialized during object serialization.
+
+         
