@@ -58,4 +58,5 @@ ANS-07   The Just-In-Time (JIT) Compiler is a component of the Java Virtual Mach
          which allows it to run directly on the system’s CPU.
 
 
+groq ="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"
  
